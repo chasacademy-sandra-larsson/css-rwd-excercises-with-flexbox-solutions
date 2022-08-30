@@ -1,0 +1,59 @@
+body {
+    background-color: #eee;
+}
+
+
+section {
+    background-color: #fff;
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+section h3 {
+    text-align: center;
+    font-size: 3rem;
+}
+
+.photo__img {
+    width: 100%;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (min-width: 600px) {
+    
+    article {
+        flex-direction: row;
+    }
+    figure {
+        margin: 2px;
+        
+    }
+    .photo-1 {
+        flex: calc(431/323);
+    }
+    .photo-2 {
+        flex: calc(750/562);
+    }
+    .photo-3 {
+        flex: calc(400/533);
+    }
+    .photo-4 {
+        flex: calc(640/426);
+
+    }
+    .photo-5 {
+        flex: calc(600/800);
+    }
+    .photo-6 {
+        flex: calc(640/426);
+    }
+
+
+
+}
+    

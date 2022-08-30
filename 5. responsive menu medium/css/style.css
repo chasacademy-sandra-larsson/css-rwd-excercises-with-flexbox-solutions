@@ -1,0 +1,97 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+  
+  body {
+    
+    font-family: "Open Sans", sans-serif;
+    background: #757f9a;   
+    background: #24C6DC;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #514A9D, #24C6DC);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #514A9D, #24C6DC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+  }
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding:50px;
+
+}
+
+.flex-nav {
+  padding: 2em 1em;
+  width: 100%;
+  max-width: 100%;
+}
+
+.flex-nav ul {
+  border:1px solid black;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 100%;
+  border-radius: 10px;
+
+}
+
+.flex-nav li {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  flex: 3;
+}
+ 
+.flex-nav a {
+  color:white;
+  font-weight: 100;
+  letter-spacing: 2px;
+  text-decoration: none;
+  background:rgba(0,0,0,0.2);
+  padding:20px 5px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition:all 0.5s;
+}
+
+
+.flex-nav a:hover {
+  background:rgba(0,0,0,0.3);
+}
+
+
+.flex-nav .social {
+  flex: 1;
+}
+
+@media screen and (max-width: 900px) {
+
+
+  .flex-nav ul {
+    flex-wrap: wrap;
+  }
+  
+  .flex-nav li {
+    flex: 1 1 50%;
+  }
+.social {
+   flex: 1 1 25%;
+}
+
+}
+
+@media screen and (max-width: 700px) {
+
+
+  .flex-nav li {
+    flex: 1 1 100%;
+  }
+
+
+}
